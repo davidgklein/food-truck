@@ -1,0 +1,26 @@
+<!doctype html>
+<div class=page>
+    <form action='{{ url_for('search') }}'>
+        <p>Find food trucks within
+        <select name=dist>
+            {% for dist in ['0.25', '0.5', '1'] %}
+                {% if request and request.args['dist'] == dist %}
+                    {% set selected = 'selected' %}
+                {% else %}
+                    {% set selected = '' %}
+                {% endif %}
+                <option {{ selected }}>{{ dist }}</option>
+            {# <option>0.25</option> #}
+{#             <option>0.5</option> #}
+{#             <option>1</option> #}
+            {% endfor %}
+        </select>
+        miles of
+        <input type=text name=address
+            {% if request.args['address'] %}
+                value="{{ request.args['address'] }}"
+            {% endif %}>
+        <input type=submit> 
+    </form>
+    {% block body %}{% endblock %}
+</div>

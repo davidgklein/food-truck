@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: GeoAlchemy2
+Version: 0.2.4
+Summary: Using SQLAlchemy with Spatial Databases
+Home-page: http://geoalchemy.org/
+Author: Eric Lemoine
+Author-email: eric.lemoine@gmail.com
+License: MIT
+Description: ============
+        GeoAlchemy 2
+        ============
+        
+        .. image:: https://travis-ci.org/geoalchemy/geoalchemy2.png?branch=master
+           :target: http://travis-ci.org/#!/geoalchemy/geoalchemy2
+        
+        .. image:: https://coveralls.io/repos/geoalchemy/geoalchemy2/badge.png?branch=master
+           :target: https://coveralls.io/r/geoalchemy/geoalchemy2
+        
+        GeoAlchemy 2 is a Python toolkit for working with spatial databases. It is
+        based on the gorgeous `SQLAlchemy <http://www.sqlalchemy.org/>`_.
+        
+        Documentation is on Read the Docs: http://geoalchemy-2.rtfd.org.
+        
+Keywords: geo gis sqlalchemy orm
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: GIS

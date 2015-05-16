@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% block body %}
+There are <b>{{ count }}</b> food trucks within {{ request.args['dist'] }} miles of {{ request.args['address'] }}:
+<ul id=trucks>
+    {% for truck in trucks %}
+        <li>{{ truck.name }} {{ truck.address }} {{ truck.distance }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
